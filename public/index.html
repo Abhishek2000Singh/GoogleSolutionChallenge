@@ -1,0 +1,29 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundraising Dashboard</title>
+</head>
+<body>
+  <div id="root"></div>
+
+  <!-- Include React and ReactDOM -->
+  <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+
+  <!-- Include your React component and styles -->
+  <script type="module" src="./App.js"></script>
+  <link rel="stylesheet" href="./App.css">
+
+  <script>
+    // Render the React component into the root element
+    ReactDOM.render(
+      React.createElement(FundraisingDashboard),
+      document.getElementById('root')
+    );
+  </script>
+</body>
+</html>
